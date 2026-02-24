@@ -78,7 +78,7 @@
         <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold tracking-tighter flex items-center gap-2">
                 <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                <span>AUSTRAL<span class="text-gray-400 font-light">DEV</span></span>
+                <span>AUSTRAL<span class="text-gray-400 font-light">STUDIO</span></span>
             </div>
             <div>
                 @if (Route::has('login'))
@@ -87,9 +87,6 @@
                             <a href="{{ url('/dashboard') }}" class="text-sm font-medium text-gray-300 hover:text-white transition">Dashboard</a>
                         @else
                             <a href="{{ route('login') }}" class="text-sm font-medium text-gray-300 hover:text-white transition">Log in</a>
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="text-sm font-medium px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition backdrop-blur-md">Register</a>
-                            @endif
                         @endauth
                     </div>
                 @endif
@@ -178,7 +175,7 @@
             <div class="col-span-1 md:col-span-2">
                 <div class="text-2xl font-bold tracking-tighter flex items-center gap-2 mb-4">
                     <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    <span>AUSTRAL<span class="text-gray-400 font-light">DEV</span></span>
+                    <span>AUSTRAL<span class="text-gray-400 font-light">STUDIO</span></span>
                 </div>
                 <p class="text-gray-400 text-sm max-w-sm">
                     Construyendo el futuro digital desde el sur hacia el mundo. Soluciones robustas, como el hielo milenario.
