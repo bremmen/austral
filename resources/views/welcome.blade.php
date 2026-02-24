@@ -52,6 +52,24 @@
         .delay-1 { animation-delay: 1s; }
         .delay-2 { animation-delay: 2s; }
         .delay-3 { animation-delay: 3s; }
+        
+        /* Snow Animation */
+        .snowflake {
+            position: fixed;
+            top: -10vh;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            pointer-events: none;
+            z-index: 9999;
+            animation: fall linear infinite, sway ease-in-out infinite alternate;
+        }
+        @keyframes fall {
+            100% { top: 110vh; }
+        }
+        @keyframes sway {
+            0% { transform: translateX(0px) rotate(0deg); }
+            100% { transform: translateX(20px) rotate(45deg); }
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
@@ -96,12 +114,12 @@
                 <div class="inline-block px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium mb-6 backdrop-blur-md animate-pulse">
                     Desarrollo de Software para Pymes
                 </div>
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-                    Impulsa tu negocio al <br/>
-                    <span class="text-gradient">Siguiente Nivel</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                    Impulsa tu negocio a la <br/>
+                    <span class="text-gradient">Cima del Fitz Roy</span>
                 </h1>
                 <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 font-light">
-                    Soluciones tecnológicas inspiradas en la inmensidad del sur. Transparentes, robustas y adaptadas a las necesidades de tu empresa.
+                    Soluciones tecnológicas inspiradas en la inmensidad de la Patagonia. Software tan robusto como nuestros glaciares, ágil como el viento pampero y adaptado a tus necesidades.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#services" class="px-8 py-4 rounded-full bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold transition transform hover:-translate-y-1 ice-glow text-lg">
@@ -148,8 +166,8 @@
         <section class="py-20 relative">
             <div class="absolute inset-0 bg-blue-900/20"></div>
             <div class="max-w-4xl mx-auto px-6 text-center relative z-10 glass-panel rounded-3xl p-12 border border-blue-500/30">
-                <h2 class="text-3xl font-bold mb-4">¿Listo para transformar tu visión en realidad?</h2>
-                <p class="text-gray-300 mb-8 max-w-xl mx-auto">Únete a cientos de empresas que ya han experimentado la solidez y el diseño de nuestras soluciones.</p>
+                <h2 class="text-3xl font-bold mb-4">¿Preparado para desafiar el hielo?</h2>
+                <p class="text-gray-300 mb-8 max-w-xl mx-auto">Únete a cientos de expedicionarios que ya han llevado sus empresas a lo más alto confiando en nuestra tecnología austral.</p>
                 <a href="#" class="px-8 py-3 rounded-full bg-white text-blue-900 font-bold hover:bg-gray-200 transition">Comenzar Proyecto</a>
             </div>
         </section>
@@ -188,5 +206,35 @@
         </div>
     </footer>
 
+    <script>
+        // Snow generation
+        const generateSnow = () => {
+            const snowflake = document.createElement('div');
+            // Fun variety of snow characters
+            const snowIcons = ['❄', '❅', '❆', '•', '·'];
+            snowflake.innerHTML = snowIcons[Math.floor(Math.random() * snowIcons.length)];
+            snowflake.classList.add('snowflake');
+            document.body.appendChild(snowflake);
+
+            const size = Math.random() * 1.5 + 0.5;
+            const startLeft = Math.random() * 100;
+            const animationDurationFall = Math.random() * 8 + 6; // 6 to 14s
+            const animationDurationSway = Math.random() * 3 + 2; // 2 to 5s
+            const opacity = Math.random() * 0.6 + 0.2;
+
+            snowflake.style.left = `${startLeft}vw`;
+            snowflake.style.fontSize = `${size}rem`;
+            snowflake.style.opacity = opacity;
+            snowflake.style.animationDuration = `${animationDurationFall}s, ${animationDurationSway}s`;
+
+            // Remove snowflake when it's totally out of bounds
+            setTimeout(() => {
+                snowflake.remove();
+            }, animationDurationFall * 1000);
+        };
+
+        // Create a gentle blizzard (every 200 ms)
+        setInterval(generateSnow, 200);
+    </script>
 </body>
 </html>
