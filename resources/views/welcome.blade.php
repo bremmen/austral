@@ -93,7 +93,7 @@
     <header class="absolute top-0 w-full z-50">
         <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold tracking-tighter flex items-center gap-2">
-                <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <x-application-logo class="w-8 h-8 text-cyan-400" />
                 <span>AUSTRAL<span class="text-gray-400 font-light">STUDIO</span></span>
             </div>
             <div>
@@ -132,7 +132,7 @@
                     <span class="text-gradient">Cima del Fitz Roy</span>
                 </h1>
                 <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 font-light">
-                    Soluciones tecnológicas inspiradas en la inmensidad de la Patagonia. Software tan robusto como nuestros glaciares, ágil como el viento pampero y adaptado a tus necesidades.
+                    Software tan robusto como nuestros glaciares, ágil como el viento pampero y adaptado a tus necesidades.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#services" class="px-8 py-4 rounded-full bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold transition transform hover:-translate-y-1 ice-glow text-lg">
@@ -194,11 +194,11 @@
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="col-span-1 md:col-span-2">
                 <div class="text-2xl font-bold tracking-tighter flex items-center gap-2 mb-4">
-                    <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <x-application-logo class="w-6 h-6 text-cyan-400" />
                     <span>AUSTRAL<span class="text-gray-400 font-light">STUDIO</span></span>
                 </div>
                 <p class="text-gray-400 text-sm max-w-sm">
-                    Construyendo el futuro digital desde el sur hacia el mundo. Soluciones robustas, como el hielo milenario.
+                    Construyendo el futuro digital desde el sur hacia el mundo. ⛄️
                 </p>
             </div>
             <div>
@@ -206,7 +206,6 @@
                 <ul class="space-y-2 text-sm text-gray-400">
                     <li><a href="#" class="hover:text-cyan-400 transition">Inicio</a></li>
                     <li><a href="#services" class="hover:text-cyan-400 transition">Servicios</a></li>
-                    <li><a href="#" class="hover:text-cyan-400 transition">Proyectos</a></li>
                     <li><a href="#" class="hover:text-cyan-400 transition">Contacto</a></li>
                 </ul>
             </div>
