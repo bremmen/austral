@@ -37,6 +37,12 @@
                             @error('image_url') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                         </div>
 
+                        <div class="mb-4">
+                            <label for="link_url" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Link URL (Saber Más) (optional)</label>
+                            <input type="url" name="link_url" id="link_url" value="{{ old('link_url', $service->link_url) }}" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                            @error('link_url') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
+                        </div>
+
                         <div class="flex items-center justify-end">
                             <button type="submit" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition duration-150 ease-in-out">Update Service</button>
                         </div>

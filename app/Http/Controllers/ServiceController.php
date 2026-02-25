@@ -25,6 +25,7 @@ class ServiceController extends Controller
             'description' => 'nullable|string',
             'icon' => 'nullable|string',
             'image_url' => 'nullable|url',
+            'link_url' => 'nullable|url',
         ]);
 
         Service::create($validated);
@@ -48,6 +49,7 @@ class ServiceController extends Controller
             'description' => 'nullable|string',
             'icon' => 'nullable|string',
             'image_url' => 'nullable|url',
+            'link_url' => 'nullable|url',
         ]);
 
         $service->update($validated);

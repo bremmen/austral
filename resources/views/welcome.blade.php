@@ -165,10 +165,12 @@
                             @if($service->image_url)
                                 <img src="{{ $service->image_url }}" alt="{{ $service->title }}" class="w-full h-32 object-cover rounded-lg mb-4 opacity-80 group-hover:opacity-100 transition">
                             @endif
-                            <a href="#" class="inline-flex items-center text-sm font-medium text-cyan-400 hover:text-cyan-300 transition group-hover:translate-x-1 duration-300">
-                                Saber más
-                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            </a>
+                            @if($service->link_url)
+                                <a href="{{ $service->link_url }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-cyan-400 hover:text-cyan-300 transition group-hover:translate-x-1 duration-300">
+                                    Saber más
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                </a>
+                            @endif
                         </div>
                     @endforeach
                 </div>
