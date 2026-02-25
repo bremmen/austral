@@ -154,7 +154,7 @@
                     <p class="text-gray-400 max-w-2xl mx-auto text-lg">Descubre las herramientas digitales que diseñamos para potenciar tu presencia online y optimizar tus procesos.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
                     @foreach($services as $index => $service)
                         <div class="glass-panel p-8 rounded-2xl hover:bg-white/10 transition duration-300 transform hover:-translate-y-2 group floating delay-{{ $index % 4 }}">
                             <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-600/20 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 group-hover:text-cyan-300 transition-all duration-300 border border-cyan-500/20">
@@ -174,6 +174,20 @@
                         </div>
                     @endforeach
                 </div>
+                
+                <!-- Added Value Banner -->
+                <div class="mt-16 p-8 rounded-2xl bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-500/30 flex flex-col md:flex-row items-center gap-6 glass-panel transform transition duration-500 hover:scale-[1.01]">
+                    <div class="w-14 h-14 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-400 flex-shrink-0 border border-cyan-500/40">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Todo Incluido en tu Proyecto</h4>
+                        <p class="text-gray-300 text-base leading-relaxed">
+                            Sin dolores de cabeza. Todos nuestros servicios de desarrollo incluyen <strong class="text-cyan-400 font-semibold">Hosting</strong>, registro de <strong class="text-cyan-400 font-semibold">Dominio Gratuito</strong> y cuentas de <strong class="text-cyan-400 font-semibold">Email Corporativo</strong> personalizadas (<span class="text-blue-300 italic">tu@tuempresa.com</span>).
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
         
