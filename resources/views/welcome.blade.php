@@ -232,6 +232,20 @@
                     <li><a href="#" class="hover:text-cyan-400 transition">Términos</a></li>
                 </ul>
             </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Medios de Pago</h4>
+                <div class="flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-3 rounded-xl w-max hover:bg-white/10 transition-colors duration-300">
+                    <div class="bg-[#009EE3] p-1.5 rounded-lg shadow-[0_0_15px_rgba(0,158,227,0.4)] flex-shrink-0">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[0.6rem] text-gray-400 font-semibold uppercase tracking-widest leading-none mb-1">PAGÁ EN CUOTAS CON</span>
+                        <span class="text-white font-bold tracking-tight leading-none text-base">mercado<span class="font-light">pago</span></span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="text-center text-gray-500 text-xs border-t border-white/10 pt-8 max-w-7xl mx-auto px-6">
             &copy; {{ date('Y') }} Austral Studio. Todos los derechos reservados.
