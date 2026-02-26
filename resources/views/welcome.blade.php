@@ -93,7 +93,7 @@
     <header class="absolute top-0 w-full z-50">
         <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold tracking-tighter flex items-center gap-2">
-                <x-application-logo class="w-8 h-8 text-cyan-400" />
+                <!-- <x-application-logo class="w-8 h-8 text-cyan-400" /> -->
                 <span>AUSTRAL<span class="text-gray-400 font-light">STUDIO</span></span>
             </div>
             <div>
@@ -124,16 +124,29 @@
             </div>
 
             <div class="relative z-10 max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
-                <div class="inline-block px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium mb-6 backdrop-blur-md animate-pulse">
-                    Desarrollo de Software para Pymes
-                </div>
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                    Impulsa tu negocio a la <br/>
-                    <span class="text-gradient">Cima del Fitz Roy</span>
-                </h1>
-                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 font-light">
-                    Software tan robusto como nuestros glaciares, ágil como el viento pampero y adaptado a tus necesidades.
-                </p>
+                @if(request()->query('target') === 'professional')
+                    <div class="inline-block px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium mb-6 backdrop-blur-md animate-pulse">
+                        Desarrollo de Portafolios y Web para Estudiantes y Profesionales
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                        Destaca tu perfil en la <br/>
+                        <span class="text-gradient">Cima del Fitz Roy</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 font-light">
+                        Creemos en el talento. Soluciones ágiles, portfolios impecables y sitios personales para destacar tu trayectoria frente al mundo.
+                    </p>
+                @else
+                    <div class="inline-block px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium mb-6 backdrop-blur-md animate-pulse">
+                        Desarrollo de Software para Pymes
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                        Impulsa tu negocio a la <br/>
+                        <span class="text-gradient">Cima del Fitz Roy</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 font-light">
+                        Software tan robusto como nuestros glaciares, ágil como el viento pampero y adaptado a tus necesidades.
+                    </p>
+                @endif
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#services" class="px-8 py-4 rounded-full bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold transition transform hover:-translate-y-1 ice-glow text-lg">
                         Explorar Servicios
@@ -210,7 +223,7 @@
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="col-span-1 md:col-span-2">
                 <div class="text-2xl font-bold tracking-tighter flex items-center gap-2 mb-4">
-                    <x-application-logo class="w-6 h-6 text-cyan-400" />
+                    <!-- <x-application-logo class="w-6 h-6 text-cyan-400" /> -->
                     <span>AUSTRAL<span class="text-gray-400 font-light">STUDIO</span></span>
                 </div>
                 <p class="text-gray-400 text-sm max-w-sm">
