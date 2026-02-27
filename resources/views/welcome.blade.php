@@ -124,9 +124,9 @@
             </div>
 
             <div class="relative z-10 max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
-                @if(request()->query('target') === 'professional')
+                @if(request()->query('t') === 'professional')
                     <div class="inline-block px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium mb-6 backdrop-blur-md animate-pulse">
-                        Desarrollo de Portafolios y Web para Estudiantes y Profesionales
+                        Desarrollo de Portafolios y Web para Profesionales
                     </div>
                     <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
                         Destaca tu perfil en la <br/>
@@ -151,7 +151,7 @@
                     <a href="#services" class="px-8 py-4 rounded-full bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold transition transform hover:-translate-y-1 ice-glow text-lg">
                         Explorar Servicios
                     </a>
-                    <a href="https://wa.me/59892438395?text=Hola,%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-full bg-transparent hover:bg-white/5 border border-white/20 transition text-lg font-medium">
+                    <a href="https://wa.me/59899426762?text=Hola,%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-full bg-transparent hover:bg-white/5 border border-white/20 transition text-lg font-medium">
                         Contactar Ahora
                     </a>
                 </div>
@@ -210,7 +210,7 @@
             <div class="max-w-4xl mx-auto px-6 text-center relative z-10 glass-panel rounded-3xl p-12 border border-blue-500/30">
                 <h2 class="text-3xl font-bold mb-4">¿Preparado para desafiar el hielo?</h2>
                 <p class="text-gray-300 mb-8 max-w-xl mx-auto">Únete a cientos de expedicionarios que ya han llevado sus empresas a lo más alto confiando en nuestra tecnología austral.</p>
-                <a href="https://wa.me/59892438395?text=Hola,%20me%20gustar%C3%ADa%20comenzar%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="btn-whatsapp inline-flex items-center gap-3 px-10 py-5 rounded-full bg-gradient-to-r from-[#20B054] to-[#25D366] text-white text-lg font-bold transition-all duration-300 relative overflow-hidden group">
+                <a href="https://wa.me/59899426762?text=Hola,%20me%20gustar%C3%ADa%20comenzar%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="btn-whatsapp inline-flex items-center gap-3 px-10 py-5 rounded-full bg-gradient-to-r from-[#20B054] to-[#25D366] text-white text-lg font-bold transition-all duration-300 relative overflow-hidden group">
                     <div class="absolute inset-0 w-full h-full bg-white/20 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out z-0"></div>
                     <svg class="w-7 h-7 relative z-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                     <span class="relative z-10">Comenzar un Proyecto</span>
@@ -226,7 +226,7 @@
                     <!-- <x-application-logo class="w-6 h-6 text-cyan-400" /> -->
                     <span>AUSTRAL<span class="text-gray-400 font-light">STUDIO</span></span>
                 </div>
-                <p class="text-gray-400 text-sm max-w-sm">
+                <p class="text-gray-400 text-sm max-w-sm mb-4">
                     Construyendo el futuro digital desde el sur hacia el mundo. ⛄️
                 </p>
             </div>
@@ -239,10 +239,20 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-4">Legal</h4>
-                <ul class="space-y-2 text-sm text-gray-400">
-                    <li><a href="#" class="hover:text-cyan-400 transition">Privacidad</a></li>
-                    <li><a href="#" class="hover:text-cyan-400 transition">Términos</a></li>
+                <h4 class="text-white font-semibold mb-4">Contacto</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li>
+                        <a href="mailto:hola@austral.studio" class="hover:text-cyan-400 flex items-center gap-2 transition w-max">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            hola@austral.studio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/59899426762" class="hover:text-cyan-400 flex items-center gap-2 transition w-max" target="_blank" rel="noopener noreferrer">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                            +598 99 426 762
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div>
