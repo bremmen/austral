@@ -129,8 +129,8 @@
                         Desarrollo de Portafolios y Web para Profesionales
                     </div>
                     <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                        Destaca tu perfil en la <br/>
-                        <span class="text-gradient">Cima del Fitz Roy</span>
+                        Lleva tu carrera a <br/>
+                        <span class="text-gradient hover:drop-shadow-[0_0_20px_rgba(6px,182px,212px,0.8)] transition-all duration-300">lo más alto del mercado</span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 font-light">
                         Creemos en el talento. Soluciones ágiles, portfolios impecables y sitios personales para destacar tu trayectoria frente al mundo.
@@ -140,11 +140,11 @@
                         Desarrollo de Software para Pymes
                     </div>
                     <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                        Impulsa tu negocio a la <br/>
-                        <span class="text-gradient">Cima del Fitz Roy</span>
+                        Eleva tu empresa a <br/>
+                        <span class="text-gradient hover:drop-shadow-[0_0_20px_rgba(6px,182px,212px,0.8)] transition-all duration-300">su máxima expresión</span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 font-light">
-                        Software tan robusto como nuestros glaciares, ágil como el viento pampero y adaptado a tus necesidades.
+                        Convertimos tus desafíos en ventas. Software de alto impacto diseñado exclusivamente para acelerar el crecimiento y la rentabilidad de tu negocio.
                     </p>
                 @endif
                 <div class="flex flex-col sm:flex-row gap-4">
