@@ -133,7 +133,7 @@
                         <span class="text-gradient hover:drop-shadow-[0_0_20px_rgba(6px,182px,212px,0.8)] transition-all duration-300">lo más alto del mercado</span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 font-light">
-                        Creemos en el talento. Soluciones ágiles, portfolios impecables y sitios personales para destacar tu trayectoria frente al mundo.
+                        Soluciones ágiles, portfolios impecables y sitios personales para destacar tu trayectoria frente al mundo.
                     </p>
                 @else
                     <div class="inline-block px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium mb-6 backdrop-blur-md animate-pulse">
@@ -257,15 +257,27 @@
             </div>
             <div>
                 <h4 class="text-white font-semibold mb-4">Medios de Pago</h4>
-                <div class="flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-3 rounded-xl w-max hover:bg-white/10 transition-colors duration-300">
-                    <div class="bg-[#009EE3] p-1.5 rounded-lg shadow-[0_0_15px_rgba(0,158,227,0.4)] flex-shrink-0">
+                 <div class="flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-3 rounded-xl w-max hover:bg-white/10 transition-colors duration-300 mb-2">
+                    <div class="bg-gray-700 p-1.5 rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.1)] flex-shrink-0">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
                         </svg>
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-[0.6rem] text-gray-400 font-semibold uppercase tracking-widest leading-none mb-1">PAGÁ EN CUOTAS CON</span>
-                        <span class="text-white font-bold tracking-tight leading-none text-base">mercado<span class="font-light">pago</span></span>
+                        <span class="text-white font-bold tracking-tight leading-none text-base">Transferencia<span class="font-light"> Bancaria</span></span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-3 rounded-xl w-max hover:bg-white/10 transition-colors duration-300">
+                        <div class="bg-[#009EE3] p-1.5 rounded-lg shadow-[0_0_15px_rgba(0,158,227,0.4)] flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[0.6rem] text-gray-400 font-semibold uppercase tracking-widest leading-none mb-1">PAGÁ EN CUOTAS CON</span>
+                            <span class="text-white font-bold tracking-tight leading-none text-base">mercado<span class="font-light">pago</span></span>
+                        </div>
                     </div>
                 </div>
             </div>
